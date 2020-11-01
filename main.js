@@ -219,8 +219,12 @@ var projectContainer = Array.from(
   document.querySelectorAll(".project-wrapper")
 );
 
-projectContainer.map((item) => {
+projectContainer.map((item, i, array) => {
+
   const ToogleClass = () => {
+        // CLear Previous Hover
+        mobile < 1025 &&   array.map((elem) => elem.classList.toggle("hovered", false));
+    // Toggle Hover
     item.classList.toggle("hovered");
   };
 
