@@ -1,7 +1,185 @@
+var logoWrapper = document.querySelector(".loader-text");
+logoWrapper.innerHTML = logoWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+
+$(window).on("load", function () {
+  // PAGE IS FULLY LOADED
+  // FADE OUT YOUR OVERLAYING
+  // console.log("Loaded");
+  // $(".loader").hide();
+});
+
+const lineDrawing = anime.timeline({
+  // direction:"alternate",
+  // loop: true
+});
+
+lineDrawing.add({
+  targets: ".logo-home",
+  translateX: "calc(50vw - 50%)",
+  translateY: "calc(50vh - 50%)",
+  duration: 1,
+});
+lineDrawing.add(
+  {
+    targets: ".loader-text",
+    color: "#ffffff",
+    duration: 1000,
+  },
+  "-=2000"
+);
+lineDrawing.add({
+  targets: "path.m",
+  strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 4000 },
+  fill: { value: "#ffffff", duration: 1000, delay: 3800 },
+  easing: "easeInOutCubic",
+
+  begin: function (anim) {
+    document.querySelector("path.m").setAttribute("stroke", "#000000");
+    document.querySelector("path.m").setAttribute("fill", "none");
+  },
+});
+
+lineDrawing.add(
+  {
+    targets: "path.a",
+    strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 3000 },
+    fill: { value: "#1804d1", duration: 1000, delay: 2800 },
+    easing: "easeInOutCubic",
+    begin: function (anim) {
+      document.querySelector("path.a").setAttribute("stroke", "#000000");
+      document.querySelector("path.a").setAttribute("fill", "none");
+    },
+  },
+  "-=3000"
+);
+lineDrawing.add(
+  {
+    targets: ".loader-text .letter",
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 900,
+    delay: (el, i) => 50 * i,
+  },
+  700
+);
+lineDrawing.add(
+  {
+    targets: ".loader-text .letter",
+    opacity: 0,
+    duration: 1000,
+  },
+  "-=2000"
+);
+
+lineDrawing.add(
+  {
+    targets: ".logo-home",
+    translateX: "calc(0vw - 40px)",
+    translateY: "calc(0vh - 20px)",
+    scale: 0.6,
+    duration: 4000,
+    complete: function (anim) {
+      $(".loader").fadeOut();
+    },
+  },
+  "+=1000"
+);
+
+const ldoo = anime.timeline({
+  direction: "alternate",
+  loop: true,
+});
+
+ldoo.add({
+  targets: "path.ma",
+  strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 4000 },
+  fill: { value: "#ffffff", duration: 1000, delay: 3800 },
+  easing: "easeInOutCubic",
+
+  begin: function (anim) {
+    document.querySelector("path.m").setAttribute("stroke", "#000000");
+    document.querySelector("path.m").setAttribute("fill", "none");
+  },
+});
+
+ldoo.add(
+  {
+    targets: "path.aa",
+    strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 3000 },
+    fill: { value: "#1804d1", duration: 1000, delay: 2800 },
+    easing: "easeInOutCubic",
+    begin: function (anim) {
+      document.querySelector("path.a").setAttribute("stroke", "#000000");
+      document.querySelector("path.a").setAttribute("fill", "none");
+    },
+  },
+  "-=3000"
+);
+
+const loo = anime.timeline({
+  direction: "alternate",
+  loop: false,
+  delay: 10000
+});
+
+loo.add({
+  targets: "path.mb",
+  strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 3000 },
+  fill: { value: "#ffffff", duration: 1000, delay: 3800 },
+  easing: "easeInOutCubic",
+
+  begin: function (anim) {
+    document.querySelector("path.m").setAttribute("stroke", "#000000");
+    document.querySelector("path.m").setAttribute("fill", "none");
+  },
+});
+
+loo.add(
+  {
+    targets: "path.ab",
+    strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 3000 },
+    fill: { value: "#ffff00", duration: 1000, delay: 2800 },
+    easing: "easeInOutCubic",
+    begin: function (anim) {
+      document.querySelector("path.a").setAttribute("stroke", "#000000");
+      document.querySelector("path.a").setAttribute("fill", "none");
+    },
+  },
+  "-=3000"
+);
+
+// window.addEventListener("click", () => lineDrawing.restart());
+
+var frontendWrapper = document.querySelector(".frontend");
+var textWrapper = document.querySelector(".marvellous");
+var aigbeWrapper = document.querySelector(".aigbe");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+aigbeWrapper.innerHTML = aigbeWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+frontendWrapper.innerHTML = frontendWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+
 (function () {
   var tl = anime.timeline({
     easing: "linear",
-    loop: true,
+    delay: "3000"
+  });
+
+  tl.add({
+    targets: ".home-bg",
+    translateX: "-50%",
+    loop: 1,
+    duration: 1,
   });
   tl.add({
     targets: ".home-bg",
@@ -9,44 +187,79 @@
     loop: 1,
     duration: 1,
   });
+  tl.add({
+    targets: ".bullseye",
+    scale: 1.4,
+    duration: 1300,
+    delay: 2000,
+  });
   tl.add(
     {
       targets: ".bullseye",
-      scale: 1.3,
+      scale: 1,
       duration: 3000,
+      loop: 5,
     },
-    1
+    "+=1000"
   );
+
+  tl.add(
+    {
+      targets: ".frontend .letter",
+      opacity: [0, 1],
+      easing: "easeInOutQuad",
+      duration: 1500,
+      delay: (el, i) => 150 * (i + 1),
+    },
+    "-=2500"
+  );
+
   tl.add({
-    targets: ".bullseye",
-    scale: 1,
-    duration: 3000,
+    targets: ".marvellous .letter",
+    opacity: [0, 1],
+    easing: "easeInOutQuad",
+    duration: 700,
+    delay: (el, i) => 150 * (i + 1),
+  });
+
+  tl.add({
+    targets: ".aigbe .letter",
+    opacity: [0, 1],
+    easing: "easeInOutQuad",
+    duration: 900,
+    delay: (el, i) => 150 * (i + 1),
   });
   tl.add({
     targets: ".blue-circle, .blue-circle-big",
     scale: 1.2,
-    opacity: 0.2,
-    stagger: 35,
-    duration: 5000,
-  });
+    opacity: 0,
+    stagger: 350,
+    duration: 2000,
+  }, "-=3400");
+
+  tl.add({
+    targets: ".white-line, .green-x, .pink-circle, .semi",
+    opacity: 1,
+    duration: 2000,
+  }, "-=4000");
   tl.add(
     {
       targets: ".blue-circle, .blue-circle-big",
       scale: 1.0,
       opacity: 1,
-      stagger: 35,
-      duration: 5000,
+      stagger: 350,
+      duration: 2000,
     },
-    "-=1000"
+    "-=1100"
   );
   tl.add(
     {
       targets: ".green-x",
-      rotate: "3turn",
+      rotate: "6turn",
       easing: "easeInQuad",
-      duration: 700,
+      duration: 600,
     },
-    "-=300"
+    "-=1000"
   );
 })();
 
@@ -220,10 +433,10 @@ var projectContainer = Array.from(
 );
 
 projectContainer.map((item, i, array) => {
-
   const ToogleClass = () => {
-        // CLear Previous Hover
-        mobile < 1025 &&   array.map((elem) => elem.classList.toggle("hovered", false));
+    // CLear Previous Hover On Mobile
+    mobile < 1025 &&
+      array.map((elem) => elem.classList.toggle("hovered", false));
     // Toggle Hover
     item.classList.toggle("hovered");
   };
@@ -234,4 +447,107 @@ projectContainer.map((item, i, array) => {
     item.addEventListener("mouseenter", ToogleClass);
     item.addEventListener("mouseleave", ToogleClass);
   }
+});
+
+function naAnim(ModalWrapper) {
+  console.log("ss", ModalWrapper);
+  na_animation = anime.timeline({
+    easing: "easeInSine",
+  });
+
+  na_animation.add(
+    {
+      targets: ModalWrapper,
+      translateX: 1000,
+      opacity: [1, 0.2],
+      easing: "easeOutQuad",
+      duration: 100,
+    },
+    0
+  );
+}
+
+var container = document.getElementById("exp-container");
+var projects = [
+  {
+    name: "filma",
+    stack: "React| Firebase",
+    desc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consectetur! ",
+    role:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus maxime autem itaque dolor molestias, ",
+    site: "google.com",
+    next: "stud",
+    slide1: "/img/Frame 3.png",
+    slide1: "/img/project1.png",
+    slide1: "/img/project2.png",
+    code: "google.com",
+  },
+  {
+    name: "stud",
+    stack: "React| Firebase",
+    desc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consectetur! ",
+    role:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus maxime autem itaque dolor molestias, ",
+    site: "google.com",
+    next: "stud",
+    slide1: "/img/Frame 3.png",
+    slide2: "/img/project1.png",
+    slide3: "/img/project2.png",
+    code: "google.com",
+  },
+
+  {
+    name: "test",
+    stack: "SS | Firebase",
+    desc:
+      "veniam tempora repellat ea quae fugit ratione saepe consectetur officiis neque expedita placeat corrupti eum iusto?",
+    role:
+      "veniam tempora repellat ea quae fugit ratione saepe consectetur officiis neque expedita placeat corrupti eum iusto?",
+    site: "google.com",
+  },
+];
+
+const changeContent = (Modal, data) => {
+  const ModalWrapper = Modal.find(".modal-wrapper");
+  function x() {
+    ModalWrapper.animate({ opacity: 0 }, 500, y);
+  }
+  function y() {
+    ModalWrapper.animate({ opacity: 1 }, 500);
+  }
+  x();
+  Modal.find(".title").text(projects[data].name);
+  Modal.find(".stack").text(projects[data].stack);
+  Modal.find(".desc").text(projects[data].desc);
+  Modal.find(".role").text(projects[data].role);
+  Modal.find(".slide-1").attr("src", projects[data].slide1);
+  Modal.find(".slide-2").attr("src", projects[data].slide2);
+  Modal.find(".slide-3").attr("src", projects[data].slide3);
+  Modal.find(".code").attr("href", projects[data].code);
+  Modal.find(".site").attr("href", projects[data].site);
+
+  Modal.find(".next-text").text(
+    projects[data + 1] ? projects[data + 1].name : projects[0].name
+  );
+  Modal.find(".prev-text").text(
+    projects[data - 1]
+      ? projects[data - 1].name
+      : projects[projects.length - 1].name
+  );
+  Modal.find(".next-btn").click(() => {
+    changeContent(Modal, projects[data + 1] ? data + 1 : 0);
+  });
+  Modal.find(".prev-btn").click(() => {
+    changeContent(Modal, projects[data - 1] ? data - 1 : projects.length - 1);
+  });
+};
+
+$("#exampleModal").on("show.bs.modal", function (event) {
+  var button = $(event.relatedTarget);
+  var title = button.data("title");
+  var foundIndex = projects.findIndex((data) => data.name === title);
+  var modal = $(this);
+  changeContent(modal, foundIndex);
 });

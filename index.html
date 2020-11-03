@@ -29,6 +29,14 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="loader">
+        <div class="logo-home text-center">
+        <svg width="337" height="299" viewBox="0 0 337 299" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+          <path class="m" d="M2.5 296.5V6.5L131.5 132L258.5 6.5V80.5L131.5 209.5L52.5 132V296.5H2.5Z" stroke="#9b5067" stroke-width="5"/>
+          <path class="a" d="M334 296.5V6.5L286 56.5V156.5H258.5L204 209.5H286V296.5H334Z" stroke="#9b5067" stroke-width="5"/>
+          </svg>
+          <p class="loader-text">Loading</p></div>
+      </div> 
       <div class="navbar-container">
         <div
           class="nav-control d-flex justify-content-center align-items-center"
@@ -95,20 +103,29 @@
 
       <div class="hero-section" id="home">
         <div class="top-nav d-none d-lg-block">
-          <img src="/img/white-line.svg" alt="" class="mr-5" />
+          <img src="/img/white-line.svg" alt="" class="white-line  mr-5" />
           <p class="download-cv d-inline-block mr-5"></p>
           <button class="btn btn-outline d-inline-block">Send An Email</button>
         </div>
+        <div class=" hero-logo text-center">
+          <svg width="337" height="299" viewBox="0 0 337 299" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg a">
+            <path class="ma" d="M2.5 296.5V6.5L131.5 132L258.5 6.5V80.5L131.5 209.5L52.5 132V296.5H2.5Z" stroke="white" stroke-width="5"/>
+            <path class="aa" d="M334 296.5V6.5L286 56.5V156.5H258.5L204 209.5H286V296.5H334Z" stroke="white" stroke-width="5"/>
+            </svg></div>
         <div class="poss">
           <div class="menu-position menu">
             <div id="myMenu"></div>
           </div>
         </div>
         <div class="home d-flex justify-content-center align-items-center">
-          <div class="text-center name">
-            <h4>Front-End Developer</h4>
-            <h2>Marvellous</h2>
-            <h1>AIGBE</h1>
+          <div class="text-center name">  
+            <svg width="337" height="299" viewBox="0 0 337 299" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+              <path class="mb" d="M2.5 296.5V6.5L131.5 132L258.5 6.5V80.5L131.5 209.5L52.5 132V296.5H2.5Z" stroke="white" stroke-width="5"/>
+              <path class="ab" d="M334 296.5V6.5L286 56.5V156.5H258.5L204 209.5H286V296.5H334Z" stroke="white" stroke-width="5"/>
+              </svg>       
+            <h4 class="frontend">Front-End Developer</h4>
+            <h2 class="marvellous">Marvellous</h2>
+            <h1 class="aigbe">AIGBE</h1>
           </div>
         </div>
       </div>
@@ -251,16 +268,313 @@
         </div>
       </div>
 
+
+      <!-- Modal -->
+      <div
+        class="modal fade show"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-xl modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body contianer pb-5 modal-wrapper">
+              <div class="mb-3">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <small aria-hidden="true">x</small>
+                </button>
+              </div>
+              <div class="row ">
+                <div class="col">
+                <h3 class="name modal-title title"></h3><br/>
+                <p class="modal-stack mb-4 stack"></p>
+              </div></div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide mb-5"
+                    data-ride="carousel"
+                  >
+                    <ol class="carousel-indicators">
+                      <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="0"
+                        class="active"
+                      >
+                        <img
+                          src=""
+                          alt="dd"
+                          class="img-fluid slide-1"
+                        />
+                      </li>
+                      <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="1"
+                      >
+                        <img
+                          src=""
+                          alt="dd"
+                          class="img-fluid slide-2"
+                        />
+                      </li>
+                      <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="2"
+                      >
+                        <img
+                          src=""
+                          alt="dd"
+                          class="img-fluid slide-3"
+                        />
+                      </li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src=""
+                          alt="dd"
+                          class="img-fluid d-block w-100 slide-1"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src=""
+                          alt="dd"
+                          class="img-fluid d-block w-100 slide-2"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src=""
+                          alt="dd"
+                          class="img-fluid d-block w-100 slide-3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-5 pt-5">
+                    <div class="col-md-6">
+                      <a class="btn modal-btn site" href="https://www.fillms.web.app">View Site</a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <a class="btn modal-btn code" href="">View Code</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-7 text-black">
+                  <div class="modal-group mb-3">
+                    <p class="modal-desc">DESCRIPTION</p>
+                    <p class="modal-cont desc">
+
+                    </p>
+                  </div>
+                  <div class="modal-group mb-5">
+                    <p class="modal-desc">ROLE PLAYED</p>
+                    <p class="modal-cont role">
+
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 align-bottom"></div>
+                    <div class="col-md-4 aligh-left">
+                      <button class="text-right modallink  prev-btn ">
+                        <small class="float-right">Prev Project</small><br />
+                        <p class="prev-text"></p>
+                        <div class="modal-arrow prev"></div>
+                      </button>
+                    </div>
+                    <div class="col-md-4">
+                      <button class="modallink next-btn ">
+                        <small class="">Next Project</small><br />
+                        <p class="next-text"></p>
+                        <div class="modal-arrow next"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div
+        class="modal fade show"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-xl modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body contianer pb-5">
+              <div class="mb-3">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <small aria-hidden="true">x</small>
+                </button>
+              </div>
+              <div class="row">
+                <h3 class="name">Filma</h3>
+                <p class="modal-stack mb-4">ReactJS | Semantic UI | Firebase</p>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide mb-5"
+                    data-ride="carousel"
+                  >
+                    <ol class="carousel-indicators">
+                      <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="0"
+                        class="active"
+                      >
+                        <img
+                          src="/img/Frame 3.png"
+                          alt="dd"
+                          class="img-fluid"
+                        />
+                      </li>
+                      <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="1"
+                      >
+                        <img
+                          src="/img/project2.png"
+                          alt="dd"
+                          class="img-fluid"
+                        />
+                      </li>
+                      <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="2"
+                      >
+                        <img
+                          src="/img/project1.png"
+                          alt="dd"
+                          class="img-fluid"
+                        />
+                      </li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="/img/Frame 3.png"
+                          alt="dd"
+                          class="img-fluid d-block w-100"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/Frame 3.png"
+                          alt="dd"
+                          class="img-fluid d-block w-100"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/Frame 3.png"
+                          alt="dd"
+                          class="img-fluid d-block w-100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-5 pt-5">
+                    <div class="col-md-6">
+                      <a class="btn modal-btn" href="">View Site</a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <a class="btn modal-btn" href="">View Code</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-7 text-black">
+                  <div class="modal-group mb-3">
+                    <p class="modal-desc">DESCRIPTION</p>
+                    <p class="modal-cont">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorem rem, est quod temporibus, itaque, qui dignissimos
+                      ea deserunt ex aliquam commodi vel incidunt. Sequi tempora
+                      illo quam repellat exercitationem minus.
+                    </p>
+                  </div>
+                  <div class="modal-group mb-5">
+                    <p class="modal-desc">ROLE PLAYED</p>
+                    <p class="modal-cont">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorem rem, est quod temporibus, itaque, qui dignissimos
+                      ea deserunt ex aliquam commodi vel incidunt. Sequi tempora
+                      illo quam repellat exercitationem minus.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 align-bottom"></div>
+                    <div class="col-md-4 aligh-left">
+                      <a class="text-right modallink" href="">
+                        <small class="float-right">Prev Project</small><br />
+                        <p class="">StudentBuddy</p>
+                        <div class="modal-arrow prev"></div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a class="modallink" href="">
+                        <small class="">Next Project</small><br />
+                        <p class="">StudentBuddy</p>
+                        <div class="modal-arrow next"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
       <!-- projects -->
       <div class="container my-5 py-5" id="projects">
         <p class="commented">&lt;!-- My Projects --&gt;</p>
         <h3 class="text-center name mb-5">Works I've Done</h3>
         <div class="row">
-          
           <div class="col-md-4 mb-5 project-wrapper">
             <div class="project project-2"></div>
             <div class="content">
-              <button class="proj-button btn project-btn">Lorem ipsum</button>
+              <button class="proj-button btn project-btn" data-toggle="modal"
+              data-target="#exampleModal"
+              data-title="filma">More Detail</button>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-5 project-wrapper">
+            <div class="project project-2"></div>
+            <div class="content">
+              <button class="proj-button btn project-btn" data-toggle="modal"
+              data-target="#exampleModal"
+              data-title="stud">More Detail</button>
             </div>
           </div>
 
@@ -285,17 +599,12 @@
             </div>
           </div>
 
-          <div class="col-md-4 mb-5">
-            <img src="./img/project3.png" alt="project1" class="img-fluid" />
-          </div>
-          
           <div class="col-md-4 mb-5 project-wrapper">
             <div class="project project-2"></div>
             <div class="content">
               <button class="proj-button btn project-btn">Lorem ipsum</button>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -413,8 +722,24 @@
           <i class="fa fa-linkedin text-white mr-3"></i>
         </div>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+      ></script> -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
 
-      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
       <script src="https://use.fontawesome.com/140f2bfb6b.js"></script>
       <!-- <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script> -->
       <script src="./anime.min.js"></script>
