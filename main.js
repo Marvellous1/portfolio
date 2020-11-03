@@ -27,6 +27,7 @@ lineDrawing.add(
     targets: ".loader-text",
     color: "#ffffff",
     duration: 1000,
+    delay: 2000
   },
   "-=2000"
 );
@@ -141,7 +142,7 @@ loo.add(
   {
     targets: "path.ab",
     strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 3000 },
-    fill: { value: "#ffff00", duration: 1000, delay: 2800 },
+    fill: { value: "#9b5067", duration: 1000, delay: 2800 },
     easing: "easeInOutCubic",
     begin: function (anim) {
       document.querySelector("path.a").setAttribute("stroke", "#000000");
