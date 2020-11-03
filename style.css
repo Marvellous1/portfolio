@@ -637,7 +637,7 @@ i {
   position: relative;
   transition: all 1s;
   width: 100%;
-  height: 200px;
+  height: 220px;
 }
 
 .project-wrapper > .project {
@@ -682,8 +682,12 @@ i {
   transition: all 0.5s ease-in-out;
 }
 
+.project.project-1 {
+  background-image: url("./img/Project1-1.jpg");
+}
+
 .project.project-2 {
-  background-image: url("./img/Frame\ 3.png");
+  background-image: url("./img/Project2-1.jpg");
 }
 
 .carousel-indicators{

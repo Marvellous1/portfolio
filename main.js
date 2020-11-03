@@ -471,32 +471,28 @@ function naAnim(ModalWrapper) {
 var container = document.getElementById("exp-container");
 var projects = [
   {
-    name: "filma",
-    stack: "React| Firebase",
+    name: "Padi",
+    stack: "React | Redux | Firebase | Bootstrap ",
     desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consectetur! ",
+      "Padi is a sophisticated journal/note taking app designedto be very simple in terms of UX giving users a good experience. It includes features like note taking, authentication, smart formatting, sorting and many more. ",
     role:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus maxime autem itaque dolor molestias, ",
-    site: "google.com",
-    next: "stud",
-    slide1: "/img/Frame 3.png",
-    slide1: "/img/project1.png",
-    slide1: "/img/project2.png",
-    code: "google.com",
+      "Padi was all me, from the inception of the idea, to the design and research to the frontend and the backend creation. Padi was inspired by a lot of notes taking app which served the purpose but without having a good UI. ",
+      site: "https://padi-online.web.app",
+    slide1: "/img/Project1-1.jpg",
+    slide2: "/img/Project1-2.jpg",
+    slide3: "/img/Project1-3.jpg",
   },
   {
-    name: "stud",
-    stack: "React| Firebase",
+    name: "Filma",
+    stack: "React | Semantic UI",
     desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consectetur! ",
+      "Filma is a movie sourcing website created to get deailed information about your favourite movie. It includes features like adding to favourite list, search, wishlist, trailer playing and many more ",
     role:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus maxime autem itaque dolor molestias, ",
-    site: "google.com",
-    next: "stud",
-    slide1: "/img/Frame 3.png",
-    slide2: "/img/project1.png",
-    slide3: "/img/project2.png",
-    code: "google.com",
+      "Filma was built as a personal project with every part of the project including the UI design built from scratch by me. The project was an inspiration from the famous imdb website.",
+    site: "https://fillms.web.app",
+    slide1: "/img/Project2-1.jpg",
+    slide2: "/img/Project2-2.jpg",
+    slide3: "/img/Project2-3.jpg",
   },
 
   {
@@ -526,7 +522,6 @@ const changeContent = (Modal, data) => {
   Modal.find(".slide-1").attr("src", projects[data].slide1);
   Modal.find(".slide-2").attr("src", projects[data].slide2);
   Modal.find(".slide-3").attr("src", projects[data].slide3);
-  Modal.find(".code").attr("href", projects[data].code);
   Modal.find(".site").attr("href", projects[data].site);
 
   Modal.find(".next-text").text(
