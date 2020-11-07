@@ -5,9 +5,17 @@
     <link rel="icon" href="/img/logo.svg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link href="/style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link
       href="//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy"
       rel="stylesheet"
@@ -32,7 +40,7 @@
   <body>
     <div class="wrapper">
       <div class="loader">
-        <div class="logo-home" style="text-align: center; position: absolute;">
+        <div class="logo-home" style="text-align: center; position: absolute">
           <svg
             width="100"
             height="100"
@@ -181,9 +189,11 @@
                 stroke-width="5"
               />
             </svg>
-            <h4 class="frontend">Front-End Developer</h4>
-            <h2 class="marvellous">Marvellous</h2>
-            <h1 class="aigbe">AIGBE</h1>
+            <h4 class="frontend" style="font-weight: 600">
+              Front-End Developer
+            </h4>
+            <h2 class="marvellous name">Marvellous</h2>
+            <h1 class="aigbe name">AIGBE</h1>
           </div>
         </div>
       </div>
@@ -381,41 +391,53 @@
                         data-slide-to="0"
                         class="active"
                       >
-                        <img src="" alt="dd" class="img-fluid slide-1" />
+                        <img
+                          data-src=""
+                          alt="Image 1"
+                          class="img-fluid slide-1 lazyload"
+                        />
                       </li>
                       <li
                         data-target="#carouselExampleIndicators"
                         data-slide-to="1"
                       >
-                        <img src="" alt="dd" class="img-fluid slide-2" />
+                        <img
+                          data-src=""
+                          alt="Image 2"
+                          class="img-fluid slide-2 lazyload"
+                        />
                       </li>
                       <li
                         data-target="#carouselExampleIndicators"
                         data-slide-to="2"
                       >
-                        <img src="" alt="dd" class="img-fluid slide-3" />
+                        <img
+                          data-src=""
+                          alt="Image 2"
+                          class="img-fluid slide-3 lazyload"
+                        />
                       </li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img
-                          src=""
-                          alt="dd"
-                          class="img-fluid d-block w-100 slide-1"
+                          data-src=""
+                          alt="Image 1"
+                          class="img-fluid d-block w-100 slide-1 lazyload"
                         />
                       </div>
                       <div class="carousel-item">
                         <img
-                          src=""
-                          alt="dd"
-                          class="img-fluid d-block w-100 slide-2"
+                          data-src=""
+                          alt="Image 2"
+                          class="img-fluid d-block w-100 slide-2 lazyload"
                         />
                       </div>
                       <div class="carousel-item">
                         <img
-                          src=""
-                          alt="dd"
-                          class="img-fluid d-block w-100 slide-3"
+                          data-src=""
+                          alt="Image 3"
+                          class="img-fluid d-block w-100 slide-3 lazyload"
                         />
                       </div>
                     </div>
@@ -757,6 +779,7 @@
       <!-- <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script> -->
       <script src="./anime.min.js"></script>
       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+      <script src="./lazysizes.min.js"></script>
       <script src="./main.js"></script>
     </div>
   </body>
