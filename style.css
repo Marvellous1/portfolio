@@ -232,13 +232,6 @@ a:hover {
   position: relative;
 }
 
-.logo-home{
-  position: absolute;
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
-}
-
 .logo-svg{
   width: 100px;
   height: 100px;
@@ -683,19 +676,26 @@ i {
 }
 
 .project.project-1 {
-  background-image: url("./img/Project1-1.jpg");
+  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778773/Project1-1_dal2zm.jpg");
 }
 
 .project.project-2 {
-  background-image: url("./img/Project2-1.jpg");
+  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778771/Project2-1_fsfjdk.jpg");
 }
 
 .project.project-3 {
-  background-image: url("./img/Project3-1.jpg");
+  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778777/Project3-1_uevoak.jpg");
 }
 
 .project.project-4 {
-  background-image: url("./img/Project4-1.jpg");
+  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778786/Project4-1_nejt4e.jpg");
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
 }
 
 .carousel-indicators{
