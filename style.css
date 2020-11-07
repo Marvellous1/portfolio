@@ -676,19 +676,19 @@ i {
 }
 
 .project.project-1 {
-  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778773/Project1-1_dal2zm.jpg");
+  background-image: url("https://res.cloudinary.com/vello/image/upload/q_auto/v1604778773/Project1-1_dal2zm.webp");
 }
 
 .project.project-2 {
-  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778771/Project2-1_fsfjdk.jpg");
+  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778771/Project2-1_fsfjdk.webp");
 }
 
 .project.project-3 {
-  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778777/Project3-1_uevoak.jpg");
+  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778777/Project3-1_uevoak.webp");
 }
 
 .project.project-4 {
-  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778786/Project4-1_nejt4e.jpg");
+  background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778786/Project4-1_nejt4e.webp");
 }
 
 @media (min-width: 768px) {

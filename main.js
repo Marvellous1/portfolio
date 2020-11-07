@@ -478,9 +478,9 @@ var projects = [
     role:
       "Padi was all me, from the inception of the idea, to the design and research to the frontend and the backend creation. Padi was inspired by a lot of notes taking app which served the purpose but without having a good UI. ",
       site: "https://padi-online.web.app",
-    slide1: "https://res.cloudinary.com/vello/image/upload/v1604778773/Project1-1_dal2zm.jpg",
-    slide2: "https://res.cloudinary.com/vello/image/upload/v1604778772/Project1-2_ayu4ou.jpg",
-    slide3: "https://res.cloudinary.com/vello/image/upload/v1604778772/Project1-3_j1qp2f.jpg",
+    slide1: "https://res.cloudinary.com/vello/image/upload/v1604778773/Project1-1_dal2zm.webp",
+    slide2: "https://res.cloudinary.com/vello/image/upload/v1604778772/Project1-2_ayu4ou.webp",
+    slide3: "https://res.cloudinary.com/vello/image/upload/v1604778772/Project1-3_j1qp2f.webp",
   },
   {
     name: "Filma",
@@ -490,9 +490,9 @@ var projects = [
     role:
       "Filma was built as a personal project with every part of the project including the UI design built from scratch by me. The project was an inspiration from the famous imdb website.",
     site: "https://fillms.web.app",
-    slide1: "https://res.cloudinary.com/vello/image/upload/v1604778771/Project2-1_fsfjdk.jpg",
-    slide2: "https://res.cloudinary.com/vello/image/upload/v1604778793/Project2-2_exhohv.jpg",
-    slide3: "https://res.cloudinary.com/vello/image/upload/v1604778788/Project2-3_xwykrn.jpg",
+    slide1: "https://res.cloudinary.com/vello/image/upload/v1604778771/Project2-1_fsfjdk.webp",
+    slide2: "https://res.cloudinary.com/vello/image/upload/v1604778793/Project2-2_exhohv.webp",
+    slide3: "https://res.cloudinary.com/vello/image/upload/v1604778788/Project2-3_xwykrn.webp",
   },
   {
     name: "Gemma",
@@ -502,9 +502,9 @@ var projects = [
     role:
       "Gemma was built as a project during my HNG Internship. It was built by by but designed by my artner during the Internship. The project is 100% responsive across all devices",
     site: "https://gemmaweaves.netlify.app",
-    slide1: "https://res.cloudinary.com/vello/image/upload/v1604778777/Project3-1_uevoak.jpg",
-    slide2: "https://res.cloudinary.com/vello/image/upload/v1604778786/Project3-2_ysmnye.jpg",
-    slide3: "https://res.cloudinary.com/vello/image/upload/v1604778785/Project3-3_nnk0e4.jpg",
+    slide1: "https://res.cloudinary.com/vello/image/upload/v1604778777/Project3-1_uevoak.webp",
+    slide2: "https://res.cloudinary.com/vello/image/upload/v1604778786/Project3-2_ysmnye.webp",
+    slide3: "https://res.cloudinary.com/vello/image/upload/v1604778785/Project3-3_nnk0e4.webp",
   },
   {
     name: "Debbs",
@@ -514,9 +514,9 @@ var projects = [
     role:
       "I designed the website from scratc using the assets provided to me by the designer. Debbs is a pixel perfect replica of the intended design.",
     site: "https:templatepack.netlify.app",
-    slide1: "https://res.cloudinary.com/vello/image/upload/v1604778786/Project4-1_nejt4e.jpg",
-    slide2: "https://res.cloudinary.com/vello/image/upload/v1604778785/Project4-2_ak6cnk.jpg",
-    slide3: "https://res.cloudinary.com/vello/image/upload/v1604778789/Project4-3_mslomn.jpg",
+    slide1: "https://res.cloudinary.com/vello/image/upload/v1604778786/Project4-1_nejt4e.webp",
+    slide2: "https://res.cloudinary.com/vello/image/upload/v1604778785/Project4-2_ak6cnk.webp",
+    slide3: "https://res.cloudinary.com/vello/image/upload/v1604778789/Project4-3_mslomn.webp",
   },
 ];
 
