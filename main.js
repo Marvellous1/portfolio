@@ -494,15 +494,29 @@ var projects = [
     slide2: "/img/Project2-2.jpg",
     slide3: "/img/Project2-3.jpg",
   },
-
   {
-    name: "test",
-    stack: "SS | Firebase",
+    name: "Gemma",
+    stack: "HTML | CSS | BOOTSTRAP",
     desc:
-      "veniam tempora repellat ea quae fugit ratione saepe consectetur officiis neque expedita placeat corrupti eum iusto?",
+      "Gemma is a sleek, and highly responsive template for a beauty salon. It provides a means to showcase the features, services and products offered by the beauty salon",
     role:
-      "veniam tempora repellat ea quae fugit ratione saepe consectetur officiis neque expedita placeat corrupti eum iusto?",
-    site: "google.com",
+      "Gemma was built as a project during my HNG Internship. It was built by by but designed by my artner during the Internship. The project is 100% responsive across all devices",
+    site: "https://gemmaweaves.netlify.app",
+    slide1: "/img/Project3-1.jpg",
+    slide2: "/img/Project3-2.jpg",
+    slide3: "/img/Project3-3.jpg",
+  },
+  {
+    name: "Debbs",
+    stack: "HTML | CSS | BOOTSTRAP",
+    desc:
+      "Debbs is a personal portfolio template built by me during my HNG Interenship. It is 100% responsive and has a lot of sections to effectively tell the world who Debbs is.",
+    role:
+      "I designed the website from scratc using the assets provided to me by the designer. Debbs is a pixel perfect replica of the intended design.",
+    site: "https:templatepack.netlify.app",
+    slide1: "/img/Project4-1.jpg",
+    slide2: "/img/Project4-2.jpg",
+    slide3: "/img/Project4-3.jpg",
   },
 ];
 
