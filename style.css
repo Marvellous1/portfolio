@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Khula', sans-serif;
   font-weight: 400;
 }
 .blue-text {
@@ -44,10 +44,6 @@ body {
   color: #eeedf1;
 }
 
-.download-cv {
-  font: Bold 18px "Gilroy Bold", sans-serif;
-}
-
 .hero-section {
   position: relative;
   z-index: 99;
@@ -61,8 +57,7 @@ body {
 }
 
 .name {
-  font-weight: 900;
-  font-family: "Gilroy Black", sans-serif;
+  font-weight: 800;
 }
 
 h1 {
