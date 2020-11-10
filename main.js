@@ -474,7 +474,7 @@ var projects = [
     name: "Padi",
     stack: "React | Redux | Firebase | Bootstrap ",
     desc:
-      "Padi is a sophisticated journal/note taking app designedto be very simple in terms of UX giving users a good experience. It includes features like note taking, authentication, smart formatting, sorting and many more. ",
+      "Padi is a sophisticated journal/note taking app designed to be very simple in terms of UX giving users a good experience. It includes features like note taking, authentication, smart formatting, sorting and many more. ",
     role:
       "Padi was all me, from the inception of the idea, to the design and research to the frontend and the backend creation. Padi was inspired by a lot of notes taking app which served the purpose but without having a good UI. ",
       site: "https://padi-online.web.app",
@@ -500,7 +500,7 @@ var projects = [
     desc:
       "Gemma is a sleek, and highly responsive template for a beauty salon. It provides a means to showcase the features, services and products offered by the beauty salon",
     role:
-      "Gemma was built as a project during my HNG Internship. It was built by by but designed by my artner during the Internship. The project is 100% responsive across all devices",
+      "Gemma was built as a project during my HNG Internship. It was built by me but designed by my partner during the Internship. The project is 100% responsive across all devices",
     site: "https://gemmaweaves.netlify.app",
     slide1: "https://res.cloudinary.com/vello/image/upload/v1604778777/Project3-1_uevoak.webp",
     slide2: "https://res.cloudinary.com/vello/image/upload/v1604778786/Project3-2_ysmnye.webp",
@@ -512,7 +512,7 @@ var projects = [
     desc:
       "Debbs is a personal portfolio template built by me during my HNG Interenship. It is 100% responsive and has a lot of sections to effectively tell the world who Debbs is.",
     role:
-      "I designed the website from scratc using the assets provided to me by the designer. Debbs is a pixel perfect replica of the intended design.",
+      "I designed the website from scratch using the assets provided to me by the designer. Debbs is a pixel perfect replica of the intended design.",
     site: "https:templatepack.netlify.app",
     slide1: "https://res.cloudinary.com/vello/image/upload/v1604778786/Project4-1_nejt4e.webp",
     slide2: "https://res.cloudinary.com/vello/image/upload/v1604778785/Project4-2_ak6cnk.webp",
