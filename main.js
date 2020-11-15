@@ -483,6 +483,18 @@ var projects = [
     slide3: "https://res.cloudinary.com/vello/image/upload/v1604778772/Project1-3_j1qp2f.webp",
   },
   {
+    name: "Denish",
+    stack: "React | Redux | Bootstrap | Firebase",
+    desc:
+      "We are Denish, an idea bank for techies. Our mission is to create an idea bank for techies where people can post project ideas and newbies can come check here for project ideas posted by others. ",
+    role:
+      "Denish is a personal project with every part of the project including the UI design, the routing, some backend works were built from scratch by me.",
+    site: "https://denishforum.web.app",
+    slide1: "https://res.cloudinary.com/vello/image/upload/v1605450221/51_tbjwdu.webp",
+    slide2: "https://res.cloudinary.com/vello/image/upload/v1605450222/53_rtlyzb.webp",
+    slide3: "https://res.cloudinary.com/vello/image/upload/v1605450215/52_n3h0kv.webp",
+  },
+  {
     name: "Filma",
     stack: "React | Semantic UI",
     desc:

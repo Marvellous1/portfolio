@@ -545,14 +545,20 @@ i {
 }
 
 .project.project-2 {
+  background-image: url("https://res.cloudinary.com/vello/image/upload/v1605450221/51_tbjwdu.webp");
+}
+
+
+.project.project-3 {
   background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778771/Project2-1_fsfjdk.webp");
 }
 
-.project.project-3 {
+
+.project.project-4 {
   background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778777/Project3-1_uevoak.webp");
 }
 
-.project.project-4 {
+.project.project-5 {
   background-image: url("https://res.cloudinary.com/vello/image/upload/v1604778786/Project4-1_nejt4e.webp");
 }
 
