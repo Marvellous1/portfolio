@@ -33,8 +33,8 @@ lineDrawing.add(
 );
 lineDrawing.add({
   targets: "path.m",
-  strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 4000 },
-  fill: { value: "#ffffff", duration: 1000, delay: 3800 },
+  strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 3000 },
+  fill: { value: "#ffffff", duration: 1000, delay: 2800 },
   easing: "easeInOutCubic",
 
   begin: function (anim) {
@@ -47,7 +47,7 @@ lineDrawing.add(
   {
     targets: "path.a",
     strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 3000 },
-    fill: { value: "#1804d1", duration: 1000, delay: 2800 },
+    fill: { value: "#1804d1", duration: 1000, delay: 1800 },
     easing: "easeInOutCubic",
     begin: function (anim) {
       document.querySelector("path.a").setAttribute("stroke", "#000000");
@@ -61,7 +61,7 @@ lineDrawing.add(
     targets: ".loader-text .letter",
     translateY: ["1.1em", 0],
     translateZ: 0,
-    duration: 900,
+    duration: 700,
     delay: (el, i) => 50 * i,
   },
   700
@@ -70,23 +70,25 @@ lineDrawing.add(
   {
     targets: ".loader-text .letter",
     opacity: 0,
-    duration: 1000,
+    duration: 900,
   },
-  "-=2000"
+  "-=400"
 );
 
 lineDrawing.add(
   {
     targets: ".logo-home",
-    translateX: "calc(0vw - 40px)",
-    translateY: "calc(0vh - 20px)",
-    scale: 0.6,
-    duration: 4000,
+    // translateX: "calc(0vw - 40px)",
+    // translateY: "calc(0vh - 20px)",
+    translateX: "calc(50vw - 50%)",
+    translateY: "calc(40vh - 50%)",
+    scale: 0,
+    duration: 2000,
     complete: function (anim) {
       $(".loader").fadeOut();
     },
   },
-  "+=1000"
+  "+=300"
 );
 
 const ldoo = anime.timeline({
@@ -96,8 +98,8 @@ const ldoo = anime.timeline({
 
 ldoo.add({
   targets: "path.ma",
-  strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 4000 },
-  fill: { value: "#ffffff", duration: 1000, delay: 3800 },
+  strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 2000 },
+  fill: { value: "#ffffff", duration: 1000, delay: 2800 },
   easing: "easeInOutCubic",
 
   begin: function (anim) {
@@ -109,8 +111,8 @@ ldoo.add({
 ldoo.add(
   {
     targets: "path.aa",
-    strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 3000 },
-    fill: { value: "#1804d1", duration: 1000, delay: 2800 },
+    strokeDashoffset: { value: [anime.setDashoffset, 0], duration: 1000 },
+    fill: { value: "#1804d1", duration: 1000, delay: 1800 },
     easing: "easeInOutCubic",
     begin: function (anim) {
       document.querySelector("path.a").setAttribute("stroke", "#000000");
@@ -230,6 +232,14 @@ frontendWrapper.innerHTML = frontendWrapper.textContent.replace(
     duration: 900,
     delay: (el, i) => 150 * (i + 1),
   });
+  tl.add({
+    targets: ".scroll-text, .scroll-arrow",
+    scale: 1.2,
+    opacity: 1,
+    stagger: 350,
+    duration: 2000,
+  }, "-=3400");
+
   tl.add({
     targets: ".blue-circle, .blue-circle-big",
     scale: 1.2,
